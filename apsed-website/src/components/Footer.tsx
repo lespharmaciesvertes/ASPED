@@ -54,7 +54,7 @@ export default function Footer() {
           <p>© {year} APSED. Tous droits réservés.</p>
           <p>
             Conçu et développé par{' '}
-            <span className="font-semibold text-white/70">SOPROSYS</span>
+            <span className="font-semibold text-white/70">SAIDABDOU</span>
           </p>
         </div>
       </div>
