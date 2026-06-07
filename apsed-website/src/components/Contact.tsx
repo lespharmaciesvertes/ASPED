@@ -1,7 +1,7 @@
 import ContactForm from './ContactForm';
 import MapEmbed from './MapEmbed';
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@apsed.dj';
+const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'saidabdoughanem77@gmail.com';
 const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '';
 
 export default function Contact() {
