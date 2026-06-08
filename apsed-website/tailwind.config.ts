@@ -8,26 +8,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Palette dérivée du logo APSED
-        ink: '#0b0f14',       // noir bleuté (silhouette)
-        emerald: {
-          DEFAULT: '#1f9d5a', // vert APSED
-          dark: '#157a45',
-        },
-        sky: {
-          DEFAULT: '#5bbfe0', // bleu clair APSED
-          dark: '#3a9fc4',
-        },
-        magenta: '#d61f7a',   // étoile APSED (accent)
-        sand: '#f6f7f5',      // fond clair
+        // Palette officielle APSED — couleurs du logo / drapeau de Djibouti
+        ink: '#0b0f14',
+        emerald: { DEFAULT: '#46a02e', dark: '#34801f' },
+        sky: { DEFAULT: '#2aa6dd', light: '#aae3fe', dark: '#1c8cc0' },
+        magenta: '#e01f16', // accent ROUGE (étoile)
+        sand: '#f5f7f4',
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
         body: ['var(--font-body)', 'system-ui', 'sans-serif'],
       },
-      maxWidth: {
-        content: '1200px',
-      },
+      maxWidth: { content: '1200px' },
     },
   },
   plugins: [],
