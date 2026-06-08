@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Logo from './Logo';
 import Socials from './Socials';
 
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@apsed.dj';
+const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'saidabdoughanem77@gmail.com';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -55,7 +55,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-x flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/50 sm:flex-row">
           <p>© {year} APSED. Tous droits réservés.</p>
-          <p>Conçu et développé par <span className="font-semibold text-white/70">SOPROSYS</span></p>
+          <p>Conçu et développé par <span className="font-semibold text-white/70">SAIDABDOUGHANEM</span></p>
         </div>
       </div>
     </footer>
