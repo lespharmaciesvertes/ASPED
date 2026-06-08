@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <nav className="container-x flex h-[76px] items-center justify-between gap-4">
         <Link href="/" aria-label="Accueil APSED" className="shrink-0">
-          <Logo light />
+          <Logo/>
         </Link>
 
         <ul className="hidden flex-1 items-center justify-center gap-5 xl:flex">
