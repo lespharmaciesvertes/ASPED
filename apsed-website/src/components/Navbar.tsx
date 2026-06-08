@@ -6,7 +6,7 @@ import Logo from './Logo';
 
 const links = [
   { href: '/', label: 'Accueil' },
-  { href: '/apsed', label: 'L\u2019APSED' },
+  { href: '/apsed', label: 'L’APSED' },
   { href: '/sport-corporatif', label: 'Sport corporatif' },
   { href: '/activites', label: 'Activités' },
   { href: '/evenements', label: 'Projets & événements' },
@@ -31,21 +31,21 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? 'border-ink/10 bg-sand/90 backdrop-blur-md shadow-sm'
-          : 'border-transparent bg-sand/70 backdrop-blur'
+          ? 'border-black/10 bg-emerald-dark shadow-md'
+          : 'border-white/10 bg-emerald'
       }`}
     >
       <nav className="container-x flex h-[76px] items-center justify-between gap-4">
         <Link href="/" aria-label="Accueil APSED" className="shrink-0">
-          <Logo />
+          <Logo light />
         </Link>
 
-        <ul className="hidden items-center gap-5 xl:flex">
+        <ul className="hidden flex-1 items-center justify-center gap-5 xl:flex">
           {links.map((l) => (
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="link-underline text-sm font-semibold text-ink/70 transition-colors hover:text-ink"
+                className="text-sm font-semibold text-white/85 transition-colors hover:text-white"
               >
                 {l.label}
               </Link>
@@ -54,7 +54,10 @@ export default function Navbar() {
         </ul>
 
         <div className="hidden shrink-0 items-center gap-2 xl:flex">
-          <Link href="/rejoindre" className="btn-ghost text-sm">
+          <Link
+            href="/rejoindre"
+            className="btn border border-white/50 text-sm text-white hover:bg-white/10"
+          >
             Inscrire une équipe
           </Link>
           <Link href="/rejoindre" className="btn-accent text-sm">
@@ -64,31 +67,35 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="grid h-10 w-10 place-items-center rounded-lg border border-ink/15 xl:hidden"
+          className="grid h-10 w-10 place-items-center rounded-lg border border-white/40 text-white xl:hidden"
           aria-label="Ouvrir le menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >
-          <span className="text-xl leading-none">{open ? '\u2715' : '\u2630'}</span>
+          <span className="text-xl leading-none">{open ? '✕' : '☰'}</span>
         </button>
       </nav>
 
       {open && (
-        <div className="border-t border-ink/10 bg-sand xl:hidden">
+        <div className="border-t border-white/10 bg-emerald-dark xl:hidden">
           <ul className="container-x flex flex-col gap-1 py-3">
             {links.map((l) => (
               <li key={l.href}>
                 <Link
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-3 font-semibold text-ink/80 hover:bg-white"
+                  className="block rounded-lg px-3 py-3 font-semibold text-white/90 hover:bg-white/10"
                 >
                   {l.label}
                 </Link>
               </li>
             ))}
             <li className="flex gap-2 px-3 pt-2">
-              <Link href="/rejoindre" onClick={() => setOpen(false)} className="btn-ghost flex-1 text-sm">
+              <Link
+                href="/rejoindre"
+                onClick={() => setOpen(false)}
+                className="btn flex-1 border border-white/50 text-sm text-white hover:bg-white/10"
+              >
                 Inscrire une équipe
               </Link>
               <Link href="/rejoindre" onClick={() => setOpen(false)} className="btn-accent flex-1 text-sm">
