@@ -1,16 +1,8 @@
 import Image from 'next/image';
 
-/**
- * Logo APSED.
- * - Si le fichier /logo-apsed.png est présent dans /public, il est utilisé.
- * - Sinon, repli sur un badge stylisé « A ».
- *
- * Pour activer le vrai logo : dépose le fichier dans public/logo-apsed.png
- * et passe la prop useImage à true.
- */
 export default function Logo({
   withText = true,
-  useImage = false,
+  useImage = true,
   light = false,
 }: {
   withText?: boolean;
@@ -18,16 +10,22 @@ export default function Logo({
   light?: boolean;
 }) {
   return (
-    <span className="flex items-center gap-2">
+    <span className="flex items-center gap-2.5">
       {useImage ? (
-        <Image
-          src="/logo-apsed.png"
-          alt="Logo APSED"
-          width={40}
-          height={40}
-          className="h-10 w-10 object-contain"
-          priority
-        />
+        <span
+          className={`grid h-11 w-11 place-items-center overflow-hidden rounded-xl ${
+            light ? 'bg-white p-1 shadow-sm' : ''
+          }`}
+        >
+          <Image
+            src="/logo-apsed.png"
+            alt="Logo APSED"
+            width={44}
+            height={44}
+            className="h-full w-full object-contain"
+            priority
+          />
+        </span>
       ) : (
         <span className="grid h-9 w-9 place-items-center rounded-lg brand-gradient font-display text-lg text-white shadow-sm">
           A
