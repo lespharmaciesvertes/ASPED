@@ -28,7 +28,7 @@ export default function ApsedPage() {
       <PageHero
         eyebrow="Qui sommes-nous ?"
         title="L'APSED"
-        subtitle="L'esprit sport, la force des entreprises."
+        subtitle="L'Association pour la Promotion du Sport en Entreprise à Djibouti rassemble entreprises, salariés et institutions autour des valeurs du sport."
       />
 
       <section className="container-x py-16 md:py-24">
