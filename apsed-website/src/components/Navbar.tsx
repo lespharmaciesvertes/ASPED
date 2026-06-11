@@ -35,7 +35,7 @@ export default function Navbar() {
           : 'border-white/10 bg-emerald'
       }`}
     >
-      <nav className="container-x flex h-[76px] items-center justify-between gap-4">
+      <nav className="container-x relative flex h-[76px] items-center">
         <Link href="/" aria-label="Accueil APSED" className="shrink-0">
           <Logo/>
         </Link>
