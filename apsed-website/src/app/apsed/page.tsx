@@ -60,11 +60,7 @@ export default function ApsedPage() {
             </p>
           </Reveal>
           <Reveal delay={120}>
-            <div className="card card-hover shimmer overflow-hidden p-2">
-              <div className="grid aspect-[4/3] place-items-center rounded-xl bg-sand p-8">
-                <img src="/logo-apsed.png" alt="Logo APSED" className="max-h-full max-w-full object-contain" />
-              </div>
-            </div>
+            <img src="/logo-apsed.png" alt="Logo APSED" className="mx-auto w-full max-w-sm object-contain transition-transform duration-300 hover:scale-110" /> 
           </Reveal>
         </div>
 
