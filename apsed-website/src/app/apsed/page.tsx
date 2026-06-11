@@ -34,23 +34,47 @@ export default function ApsedPage() {
       <section className="container-x py-16 md:py-24">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <Reveal>
-            <h2 className="display-title text-3xl sm:text-4xl">Notre histoire</h2>
-            <p className="mt-5 text-lg leading-relaxed text-ink/70">
-              Née de la conviction que le sport est un formidable vecteur de cohésion,
-              l&apos;APSED accompagne les entreprises de Djibouti dans la mise en place
-              d&apos;activités sportives porteuses de sens.
-            </p>
-            <p className="mt-4 text-lg leading-relaxed text-ink/70">
-              Au-delà du terrain, l&apos;association porte un projet institutionnel et
-              durable, qui dépasse une seule discipline pour fédérer l&apos;ensemble du
-              tissu économique et social.
-            </p>
+            <div className="text-justify">
+              <h2 className="display-title text-3xl sm:text-4xl">Notre histoire</h2>
+          
+              <p className="mt-5 text-lg leading-relaxed text-ink/70">
+                L'APSED est née d'une volonté simple : rassembler, créer du lien et donner au sport une place plus forte dans la vie sociale et professionnelle.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                Avant même la création de l'association, plusieurs d'entre nous organisaient déjà, chacun de leur côté, de petits événements récréatifs, principalement autour du football. Il s'agissait souvent de compétitions amicales, organisées sur une ou deux semaines, réunissant des collègues, des amis, des entreprises et des passionnés de sport dans un esprit de convivialité, de partage et de saine compétition.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                Avec le temps, nous avons compris que ces initiatives, bien qu'informelles, répondaient à un véritable besoin : celui de créer des espaces de rencontre, de cohésion et de dépassement, au-delà du simple cadre professionnel ou amical.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                Lorsque nous avons découvert le concept du football corporatif et la possibilité de donner une dimension plus structurée, plus ambitieuse et plus internationale à ces initiatives, l'évidence s'est imposée à nous. Il ne s'agissait plus seulement d'organiser des matchs ou des tournois ponctuels, mais de bâtir un projet durable, capable de fédérer les entreprises, les institutions, les jeunes, les sportifs amateurs et l'ensemble des acteurs engagés autour des valeurs du sport.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                C'est ainsi qu'est née l'APSED : une association portée par l'envie de transformer des initiatives locales en un véritable mouvement sportif, social et citoyen.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                Notre ambition est désormais de faire du sport un outil de cohésion, de représentation et de rayonnement, en offrant à Djibouti une plateforme organisée, inclusive et ouverte sur l'international.
+              </p>
+          
+              <p className="mt-4 text-lg leading-relaxed text-ink/70">
+                Au-delà du terrain, l&apos;association porte un projet institutionnel et durable, qui dépasse une seule discipline pour fédérer l&apos;ensemble du tissu économique et social.
+              </p>
+            </div>
           </Reveal>
           <Reveal delay={120}>
-            <div className="card card-hover shimmer overflow-hidden p-2">
-              <div className="brand-gradient-anim grid aspect-[4/3] place-items-center rounded-xl">
-                <span className="font-display text-6xl text-white/90">APSED</span>
-              </div>
+            <div className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-xl">
+              <img
+                src="/logo-apsed.png"
+                alt="Logo APSED"
+                className="w-full object-contain transition-transform duration-500 group-hover:scale-110"
+              />
+          
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
             </div>
           </Reveal>
         </div>

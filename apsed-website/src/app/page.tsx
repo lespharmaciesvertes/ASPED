@@ -50,8 +50,8 @@ export default async function HomePage() {
           </Reveal>
           <Reveal delay={120}>
             <div className="card card-hover shimmer overflow-hidden p-2">
-              <div className="brand-gradient-anim grid aspect-[4/3] place-items-center rounded-xl">
-                <span className="font-display text-5xl uppercase text-white/90">Esprit d&apos;équipe</span>
+              <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
+                <img src="/photo-equipe.png" alt="Équipe APSED" className="absolute inset-0 h-full w-full object-cover" />
               </div>
             </div>
           </Reveal>
