@@ -67,7 +67,15 @@ export default function ApsedPage() {
             </div>
           </Reveal>
           <Reveal delay={120}>
-            <img src="/logo-apsed.png" alt="Logo APSED" className="mx-auto w-full max-w-sm object-contain transition-transform duration-300 hover:scale-110" /> 
+            <div className="group relative mx-auto w-full max-w-sm overflow-hidden rounded-xl">
+              <img
+                src="/logo-apsed.png"
+                alt="Logo APSED"
+                className="w-full object-contain transition-transform duration-500 group-hover:scale-110"
+              />
+          
+              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/30 to-transparent transition-transform duration-1000 group-hover:translate-x-full" />
+            </div>
           </Reveal>
         </div>
 
