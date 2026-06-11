@@ -35,7 +35,7 @@ export default function Navbar() {
           : 'border-white/10 bg-emerald'
       }`}
     >
-      <nav className="container-x relative flex h-[76px] items-center">
+      <nav className="container-x flex h-[76px] items-center justify-between gap-4">
         <Link href="/" aria-label="Accueil APSED" className="shrink-0">
           <Logo/>
         </Link>
@@ -45,7 +45,7 @@ export default function Navbar() {
             <li key={l.href}>
               <Link
                 href={l.href}
-                className="text-sm font-semibold text-white/85 transition-colors hover:text-white"
+                className="inline-block text-center text-sm font-semibold text-white/85 transition-colors hover:text-white"
               >
                 {l.label}
               </Link>
